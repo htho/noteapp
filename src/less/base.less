@@ -1,0 +1,115 @@
+// https://www.smashingmagazine.com/2016/11/css-inheritance-cascade-global-scope-new-old-worst-best-friends/
+
+@button-disabled-background: none;
+@button-disabled-color: darkgray;
+
+@button-background: none;
+@button-color: black;
+
+@button-border: 1px solid black;
+
+/*
+@page-bg-color: white;
+@page-fg-color: black;
+*/
+* {
+  font-family: inherit;
+  line-height: inherit;
+  color: inherit;
+
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html {
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+* + * {
+  margin-top: 1.5em;
+}
+
+body, br, li, dt, dd, th, td, option {
+  margin-top: 0;
+}
+
+label {
+  display: block
+}
+
+label + * {
+  margin-top: 0.5rem;
+}
+
+section, p {
+  padding: 0.01em 8px;
+}
+
+q {
+  font-style: oblique;
+  &::before, &::after{
+    content: "";
+  }
+}
+
+main {
+  max-width: 40em;
+  padding-left: 2em;
+
+  p {
+  }
+}
+
+pre, code, kbd, samp {
+  font-family: monospace;
+}
+
+
+
+button {
+  background: @button-background;
+  color: @button-color;
+  border: @button-border;
+
+  &:disabled{
+    cursor: not-allowed;
+    background: @button-disabled-background;
+    color: @button-disabled-color;
+  }
+}
+label {
+
+}
+
+input {
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+  background: none;
+
+  //&:-moz-read-only, &:read-only, //FF ignores the whole rule, because it doesn't know :read-only
+  &[readonly], // we use [readonly], because it is safer.
+  &:disabled {
+    cursor: default;
+    color: gray;
+  }
+}
+
+table {
+  text-align: left;
+  width: 100%;
+  table-layout: auto;
+  border-collapse:collapse;
+
+  thead tr {
+    border-bottom: 1px solid black;
+  }
+
+  tbody tr:nth-child(even){
+    background-color: lightgray;
+  }
+}

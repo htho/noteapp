@@ -1,0 +1,23 @@
+@formBreak: 481px;
+
+.form-row {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+
+  & > * {
+    margin-top: 0;
+    flex-basis: 100%;
+    flex-grow: 1;
+
+    margin-left: 2px;
+    margin-right: 2px;
+
+    @media only screen and (min-width: @formBreak) {
+      flex-basis: auto;
+    }
+  }
+  & > * > * {
+    width: 100%;
+  }
+}

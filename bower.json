@@ -1,0 +1,31 @@
+{
+  "name": "noteapp",
+  "authors": [
+    "Hauke Thorenz <htho@thorenz.net>"
+  ],
+  "description": "An application to learn the capabilities of Angular and Dexie, through NgDexie.",
+  "main": "index.html",
+  "keywords": [
+    "angular",
+    "dexie",
+    "ng-dexie",
+    "example",
+    "notes",
+    "indexeddb",
+    "dexiejs"
+  ],
+  "license": "AGPL-3.0",
+  "homepage": "github.com/htho/noteapp",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "src/components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "ng-dexie": ">= 0.0.18",
+    "font-awesome": "fontawesome#^4.7.0"
+  }
+}

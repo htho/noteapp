@@ -1,0 +1,21 @@
+//@import "base.w3";
+@import "base";
+@import "form-rows";
+
+ul.row-actions{
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  li {
+    display: inline;
+    button {
+      width: 1.4em;
+      height: 1.4em;
+      margin: .1em;
+      padding: 0em;
+    }
+    button[ng-click^="edit"]:disabled, button[ng-click^="abort"]:disabled {
+      display: none;
+    }
+  }
+}
