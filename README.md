@@ -1,6 +1,9 @@
 # noteapp
 A simple note taking app to learn the basics of [Angular](https://angularjs.org/), [Dexie](http://dexie.org/) and [NgDexie](https://github.com/FlussoBV/NgDexie)
 
+## Live
+Visit https://htho.github.io/noteapp/ to try noteapp now.
+
 ## About
 
 This project is a place for me (and maybe others) to learn the basics of [Angular](https://angularjs.org/), [Dexie](http://dexie.org/) and [NgDexie](https://github.com/FlussoBV/NgDexie).
