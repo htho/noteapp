@@ -16,7 +16,7 @@ Since I also am interested in progressive web apps, it is possible that I will e
 
 ## Why this App?
 
-The examples in NgDexies Dokumentation often hint at a simple note taking app.
+The examples in [NgDexies Documentation](https://github.com/FlussoBV/NgDexie/wiki/QuickStart) often hint at a simple note taking app.
 This app takes notes using NgDexie. It does not necessarily use all of NgDexies features. It also does not use the same variables or names as the documentation. But it is close.
 
 # Build/Test
